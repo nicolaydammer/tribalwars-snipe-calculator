@@ -11,7 +11,7 @@
         <input type="checkbox" id="verdedigende_snipe_checkbox" autocomplete="off">
     </label>
     <br/>
-    <label>Tijd dat troepen onderweg zijn naar een dorp:
+    <label>Tijd dat troepen onderweg zijn naar een (barbaren)dorp:
         <input id="aankomst_dorp" type="datetime-local">
     </label>
     <br/>
@@ -19,18 +19,19 @@
         <input id="troepen_aankomst_snipe" type="datetime-local">
     </label>
     <br/>
-    <br/>
-    <label>Tijd om dorp aan te vallen:
-        <input id="aanvals_tijd" type="datetime-local" disabled>
-    </label>
-    <div id="verdedigende_snipe_fields" style="display: none;">
-        <label>Tijd om aanval op dorp terug te trekken:
-            <input id="terugtrek_tijd" type="datetime-local" disabled>
-        </label>
-    </div>
-    <br/>
     <input type="submit" value="Bereken snipe">
 </form>
+<br />
+<br />
+<br />
+Tijd om dorp aan te vallen:
+<h3 id="aanvals_tijd"></h3>
+
+<div id="verdedigende_snipe_fields" style="display: none;">
+    Tijd om aanval op dorp terug te trekken:
+        <h3 id="terugtrek_tijd"></h3>
+
+</div>
 <script src="script.js"></script>
 </body>
 </html>
