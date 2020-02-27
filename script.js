@@ -28,7 +28,7 @@ function stringToDateTimeObject(string, boolean) {
 
 function calculateRetreatTime(troepen_aankomst, troepen_aankomst_snipe) {
     if (troepen_aankomst.getDate() !== troepen_aankomst_snipe.getDate()) {
-        troepen_aankomst_snipe.setDate(troepen_aankomst_snipe.getDate() + 1)
+        troepen_aankomst_snipe.setDate(troepen_aankomst_snipe.getDate())
     }
     troepen_aankomst_snipe.setHours(troepen_aankomst_snipe.getHours() - troepen_aankomst.getHours());
     troepen_aankomst_snipe.setMinutes(troepen_aankomst_snipe.getMinutes() - troepen_aankomst.getMinutes());
